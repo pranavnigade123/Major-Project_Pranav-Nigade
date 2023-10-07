@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="pixellogo1.png" alt="Logo8">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="project1.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("active");
+        }
+    </script>
+</header>
+
+   
+<section id="sec2" class="about-section">
+    <div class="about-image">
+        <img src="aboutusbg.jpg" alt="About Us Image">
+    </div>
+    <div class="about-content">
+        <h1 id="tt2">About Us</h1>
+        <p id="p1">At Pixel, we're not your typical digital marketing agency. We're not here to simply run campaigns and provide reports.
+             We're your strategic partner in the digital landscape, and we're on a mission to revolutionize the way you perceive digital marketing.
+             <br>In a world where digital trends shift like sand dunes, we're your steady lighthouse guiding you through the digital storm. 
+             We're not content with just following the trends; we set them. With us, you're not hiring an agency; you're gaining a team of visionaries, innovators, and digital pioneers.
+             <br><br>Our story starts in Pune, a city known for its innovation and entrepreneurial spirit. Back in 2012, 
+             we set out on a mission to blend traditional business wisdom with the boundless opportunities of the digital universe.
+              Our passion lies in helping businesses in Pune and beyond reach their full digital potential.</p>
+    </div>
+</section>
+
+<section id="sec3" class="mission-section">
+    <div class="mission-content">
+        <h1 id="tt3">Our Mission</h1>
+        <p id="p2">Our mission is nothing short of digital transformation. We're not satisfied with merely improving your online presence; 
+            we want to reshape the future of your brand. We don't just chase growth; we engineer it.
+             Our dedicated team of experts is committed to finding creative and data-driven solutions that leave a lasting impact.
+             <br>In a digital world where competition is fierce and attention spans are fleeting, we stand out by delivering not just results,
+              but experiences. Your brand's journey with us is about achieving digital excellence, breaking boundaries,
+               and making your presence felt in every corner of the online realm.With a relentless pursuit of excellence,
+                we're here to ensure that you not only succeed but thrive in the digital age. 
+                Welcome to the future of digital marketing—welcome to Pixel.</p>
+    </div>
+</section>
+
+<section id="sec4">
+    <div id="sec4-content">
+        <h1 id="tt4">Let's Grow Together</h1>
+        <img id="sec4logo" src="pixellogo1.png" alt="Logo8"><br><br>
+        
+    </div>
+    <div id="sec4-form">
+        <h3 id="tt5">Get in Touch</h3>
+        <form id="contact-form" action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+<footer id="footerr">
+    <p>&copy; 2023 PIXEL</p>
+</footer>
+</body></html>
